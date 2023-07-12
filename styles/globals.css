@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Angkor&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Angkor&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* @font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/SourceSansPro-Bold.otf") format("otf"),
+    url("../fonts/SourceSansPro-BoldIt.otf") format("otf");
+
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.paragraph {
+  @apply text-lg text-charlestonGreen font-normal;
+}
+.heading {
+  @apply text-2xl font-bold text-charlestonGreen uppercase;
+}
+.heading44400 {
+  @apply text-44px font-normal text-charlestonGreen;
+}
+
+.angkorText {
+  @apply font-angkor text-2xl;
+}
+.section-title {
+  @apply text-2xl font-normal font-angkor text-charlestonGreen;
+}
+.section-heading {
+  @apply text-4xl font-normal  text-charlestonGreen;
+}
+
+/* Swiper Style */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next {
+  --swiper-navigation-size: 28px;
+  --swiper-theme-color: #cb2028;
+}
+
+.swiper-button-prev {
+  --swiper-navigation-size: 28px;
+  --swiper-theme-color: #cb2028;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
